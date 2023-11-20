@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   swap.hpp                                           :+:      :+:    :+:   */
+/*   whatever.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 01:10:26 by sawang            #+#    #+#             */
-/*   Updated: 2023/11/20 01:10:26 by sawang           ###   ########.fr       */
+/*   Updated: 2023/11/20 17:00:42 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,13 @@ void	swap(T &a, T &b)
 }
 
 template <typename T>
-T const &min(T const &a, T const &b)
+const T &min(const T &a, const T &b)
 {
 	return (a < b ? a : b);
 }
 
 template <typename T>
-T const &max(T const &a, T const &b)
+const T &max(const T &a, const T &b)
 {
 	return (a > b ? a : b);
 }

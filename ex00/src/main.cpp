@@ -6,7 +6,7 @@
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 01:16:12 by sawang            #+#    #+#             */
-/*   Updated: 2023/11/20 01:16:12 by sawang           ###   ########.fr       */
+/*   Updated: 2023/11/20 17:01:22 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main( void )
 	std::cout << "min( c, d ) = " << ::min( c, d ) << std::endl;
 	std::cout << "max( c, d ) = " << ::max( c, d ) << std::endl;
 
-	float e = 2.1f;
+	float e = 1.1f;
 	float f = 2.1f;
 	::swap(e, f);
 	std::cout << "e = " << e << ", f = " << f << std::endl;
