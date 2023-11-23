@@ -6,7 +6,7 @@
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:31:49 by sawang            #+#    #+#             */
-/*   Updated: 2023/11/20 16:53:42 by sawang           ###   ########.fr       */
+/*   Updated: 2023/11/23 13:47:25 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ template <typename T>
 Array<T>::~Array()
 {
 	delete [] this->_array;
+	this->_array = NULL;
+	this->_size = 0;
 }
 
 //operator[] overload
