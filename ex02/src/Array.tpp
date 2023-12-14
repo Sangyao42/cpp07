@@ -6,7 +6,7 @@
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:31:49 by sawang            #+#    #+#             */
-/*   Updated: 2023/11/23 15:01:13 by sawang           ###   ########.fr       */
+/*   Updated: 2023/12/14 15:53:05 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ T &Array<T>::operator[](unsigned int i) const
 
 //getters
 template <typename T>
-unsigned int Array<T>::getSize() const
+unsigned int Array<T>::size() const
 {
 	return (this->_size);
 }

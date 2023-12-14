@@ -6,7 +6,7 @@
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:27:49 by sawang            #+#    #+#             */
-/*   Updated: 2023/11/20 16:53:09 by sawang           ###   ########.fr       */
+/*   Updated: 2023/12/14 15:53:00 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class Array
 		T		&operator[](unsigned int i) const;
 
 		//getters
-		unsigned int	getSize() const;
+		unsigned int	size() const;
 		T *getAddress() const;
 
 		class IndexOutOfRangeException : public std::exception
