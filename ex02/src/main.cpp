@@ -23,6 +23,9 @@ int main(int, char**)
     {
         Array<int> tmp = numbers;
         Array<int> test(tmp); // copy constructor
+		// std::cout << "Address of Array<int>(tmp): " << tmp.getAddress() << std::endl;
+		// std::cout << "Address of Array<int>(test): " << test.getAddress() << std::endl;
+		// std::cout << std::endl;
 		std::cout << "Address of Array<int>(numbers): " << Array<int>(numbers) << std::endl;
 		std::cout << "Address of Array<int>(tmp): " << Array<int>(tmp) << std::endl;
 		std::cout << "Address of Array<int>(test): " << Array<int>(test) << std::endl;
@@ -64,7 +67,7 @@ int main(int, char**)
 	Array<int> test;
 	std::cout << test << std::endl;
 	std::cout << std::endl;
-	
+
 	Array<struct s_test> test2(2);
 	for (int i = 0; i < 2; i++)
 	{
