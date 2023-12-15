@@ -6,12 +6,18 @@
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 15:27:49 by sawang            #+#    #+#             */
-/*   Updated: 2023/12/14 15:53:00 by sawang           ###   ########.fr       */
+/*   Updated: 2023/12/15 16:05:55 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include <iostream>
+
+struct s_test
+{
+	int a;
+	int b;
+};
 
 template <typename T>
 class Array

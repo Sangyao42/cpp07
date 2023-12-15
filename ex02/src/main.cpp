@@ -2,6 +2,9 @@
 #include <Array.hpp>
 
 #define MAX_VAL 750
+
+
+
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);
@@ -56,8 +59,20 @@ int main(int, char**)
     }
 	std::cout << "size" << numbers.size() << std::endl;
     delete [] mirror;
+	std::cout << std::endl;
 
 	Array<int> test;
 	std::cout << test << std::endl;
+	std::cout << std::endl;
+	
+	Array<struct s_test> test2(2);
+	for (int i = 0; i < 2; i++)
+	{
+		test2[i].a = i;
+		test2[i].b = i + 1;
+	}
+	for (int i = 0; i < 2; i++)
+		std::cout << test2[i].a << ' ' << test2[i].b << std::endl;
+	std::cout << "size of test 2: " << test2.size() << std::endl;
     return 0;
 }
