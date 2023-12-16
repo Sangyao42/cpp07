@@ -6,7 +6,7 @@
 /*   By: sawang <sawang@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 01:30:17 by sawang            #+#    #+#             */
-/*   Updated: 2023/12/14 15:41:54 by sawang           ###   ########.fr       */
+/*   Updated: 2023/12/16 18:38:06 by sawang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	iter(T *array, size_t length, void (*f)(T &))
 }
 
 template <typename T>
-void	iter(T *array, size_t length, void (*f)(const T &))
+void	iter(const T *array, size_t length, void (*f)(const T &))
 {
 	for (size_t i = 0; i < length; i++)
 		f(array[i]);
@@ -33,11 +33,11 @@ void	print(T &a)
 	std::cout << a << " ";
 }
 
-// template <typename T>
-// void	print(const T &a)
-// {
-// 	std::cout << a << " ";
-// }
+template <typename T>
+void	print(const T &a)
+{
+	std::cout << a << " ";
+}
 
 template <typename T>
 void	increment(T &a)
